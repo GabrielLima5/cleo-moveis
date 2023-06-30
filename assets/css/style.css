@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #ca2025;
+}
+
+.hide{
+    display: none !important;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.open{
+    right: 0 !important; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif !important;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header > .header-up{
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 1.2em;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > .header-up > .image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 120px;
+}
+
+header > .header-up > .image > .slogan{
+    width: 236px;
+    font-size: .8rem;
+    text-align: center;
+}
+
+header > .header-up > .image > img{
+    height: 150px;
+}
+ 
+header > .header-up > .icons{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+header > .header-up > .icons > div{
+    height: 50px;
+    border-left: 1px solid white;
+    padding-left: 20px;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header > .header-up > .icons .desc .text-1 span{
+    font-weight: bold;
+}
+
+header > .header-up button{
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 10px;
+}
+
+header > .header-up > .icons > .contact-data > .header-desc {
+    width: 300px;
+}
+
+header > .header-down{
+    width: 100%;
+    background-color: #9b0000;
+}
+.open-menu, .close-menu{
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    display: none;
+}
+header > .header-down > .items > nav > ul{
+    height: 80px;
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+header > .header-down > .items > nav > ul > li{
+    font-size: 1.5em;
+    height: inherit;
+}
+
+header > .header-down > .items > nav > ul > li:hover{
+    border-bottom: 3px solid white;
+}
+
+header > .header-down > .items > nav > ul > li:nth-child(6):hover{
+    border-bottom: unset;
+}
+header > .header-down > .items > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+header > .header-down .budget-request{
+    font-size: 0.9em;
+}
+
+header > .header-down .budget-request, 
+main > .contact > .contact-box > .contact-button button{
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    background: rgb(1, 153, 1);
+    border: 2px solid ;
+    color: white;
+}
+
+main > .contact > .contact-box > .contact-button button{
+    font-size: 1.5rem;
+}
+
+header > .header-down .budget-request > span{
+    margin-right: 15px;
+}
+
+header > .header-down .budget-request:hover,
+main > .contact > .contact-box > .contact-button button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(1, 153, 1);
+}
+
+main > .about-us{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main > .about-us > .who-we-are{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .about-us > .who-we-are > h2{
+    color: #9b0000;
+    font-size: 3em;
+    margin: 20px;
+}
+
+main > .about-us > .who-we-are > .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+}
+
+main > .about-us > .who-we-are > .description p{
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 0 50px 20px 0;
+}
+
+main > .about-us > .who-we-are > .description > .image > img{
+    width: 450px;
+}
+
+main > .products {
+    margin-top: 100px;
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+    background-color: #9b0000;
+    color: white;
+}
+
+main > .products > h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+main > .products > .products-list{
+    max-width: 1200px;
+    margin: auto; 
+}
+
+main > .products > .products-list > .product{
+    border-bottom: 1px solid white;
+}
+
+main > .products > .products-list span{
+    font-size: 2em;
+    text-align: left;
+}
+
+main > .products > .products-list button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+}
+
+main > .products > .products-list > .product-desc{
+    background-color: rgb(58, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+}
+
+main > .products #mesa-turim,
+main > .products #painel-roma,
+main > .products #sofa-input{
+    width: 100%;
+    grid-column: span 2;
+}
+
+main > .products #sofa-input{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+main > .products #sofa-input::placeholder{
+    color: white;
+}
+
+main > .products > .products-list > .product-desc > h2{
+    margin: 10px 0;
+}
+
+main > .products > .products-list > .product-desc > .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+}
+
+main > .products > .products-list > .product-desc > .item > .item-image img{
+    width: 100%;
+}
+
+main > .products > .products-list > .product-desc > .item > .item-description{
+    padding: 0px 32px;
+}
+
+main > .products > .products-list > .product-desc h2{
+    text-align: center;
+}
+
+main > .contact{
+    padding: 20px 0px;
+    background-color: #9b0000;
+    color: white;
+}
+main > .contact > h2{
+    margin: 25px;
+    font-size: 3em;
+    text-align: center;
+}
+main > .contact > .contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .contact > .contact-box > .contact-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0px 30px;
+}
+
+main > .contact > .contact-box > .contact-button p{
+    text-align: center;
+}
+
+main > .contact > .contact-box > .contact-button > button{
+    font-size: 1.4em;
+}
+
+main > .contact > .contact-box > .contact-button > button:hover{  
+    cursor: pointer;
+    background-color: white;
+    color: rgb(1, 153, 1);
+}
+
+main > .contact > .contact-box > .contact-button > span {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: bold;
+}
+
+main > .contact > .contact-box > .contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main > .contact > .contact-box > .contact-info > span{
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+main > .contact > .contact-box > .contact-info > address > ul{
+    list-style: none;
+    margin: 0;
+}
+
+main > .contact > .contact-box > .contact-info > address > ul > li{
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+main > .contact > .contact-box > .contact-info > address > ul > li.social-media{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+main > .contact > .contact-box > .contact-info > address > ul > li.social-media > a{
+    margin-right: 10px;
+}
+
+main > .contact > .contact-box > .contact-info > address > ul > li > button{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    margin-right: 10px;
+}
+
+main > .contact > .contact-box > .contact-info > address > ul > li .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main > .contact > .contact-box > .contact-info > address > ul > li > a, footer > span > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    height: 100px;
+    background-color:black;
+    color: white;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > span{
+    text-align: center;
+}
+
+/* Animação */
+[data-animation]{
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-animation="down"]{
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-animation="up"]{
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-animation="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animation="left"]{
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-animation].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-animation="opacity"]{
+    opacity: 0;
+    transition: .1s;
+}
+
+@media only screen and (max-width: 1500px){
+    header > .header-up > .image{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    main > .about-us > .who-we-are > .description{
+        flex-direction: column;
+        width: 1000px;
+    }
+    
+
+    main > .about-us > .who-we-are > .description p{
+        width: 900px;
+        margin: 0 0 50px 0;
+    }
+
+    header > .header-up > .icons > .can-we-help{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    header > .header-up > .image > img{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    main > .products > .products-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main > .products > .products-list > .product-desc, 
+    main > .products > .products-list > .product{
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    header > .header-up{
+        justify-content: space-evenly;
+    }
+
+    header > .header-up > .icons > .opening-hours{
+        display: none;
+    }
+
+    main > .products > .products-list > .product-desc, 
+    main > .products > .products-list > .product{
+        width: 800px;
+    }
+    
+    main > .products > .products-list > .product-desc > .item{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    header > .header-down > .items > nav > ul{
+        justify-content: space-evenly;
+    }
+
+    main > .about-us > .who-we-are > .description, 
+    main > .about-us > .who-we-are > .description p{
+        width: 700px;
+    }
+
+    main > .about-us > .who-we-are > .description p{
+        margin: 0 0 50px 0;
+    }
+
+    main > .contact > .contact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main > .contact > .contact-box > .contact-button{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    header > .header-up > .image > img{
+        height: 100px;
+    }
+
+    header > .header-down > .items > nav > ul{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -70vw;
+        width: 70vw;
+        height: 100vh;
+        background-color: #5b0202;
+        margin: 0;
+        transition: right 0.2s linear;
+        z-index: 1;
+    }
+
+    header > .header-down > .items > nav > ul > li:hover{
+        border-bottom: unset;
+    }
+
+    header > .header-down > .red-line{
+        height: 40px;
+        background-color: #9b0000;
+    }
+
+    header > .header-up > .icons > .open-menu{
+        width: 100%;
+        display: inline-block;
+        outline: none;
+        border: none;
+        background: none;
+        
+    }
+
+    header > .header-down > .items > nav > ul > .close-menu{
+        margin-top: 30px;
+        display: inline-block;
+        background: none;
+        outline: none;
+        border: none;
+        color: white;
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    header > .header-down > .items > nav > ul > li > a{
+        border-bottom: 1px solid white;
+    }
+
+    main > .products > .products-list > .product-desc, 
+    main > .products > .products-list > .product{
+        width: 700px;
+    }
+
+    main > .products > .products-list > .product-desc > .item{
+        width: 350px;
+    }
+
+    main > .products > .products-list > .product-desc > .item > .item-description{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main > .products > .products-list > .product-desc > .item > .item-description > p{
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    main > .about-us > .who-we-are > .description, 
+    main > .about-us > .who-we-are > .description p{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    header > .header-up{
+        justify-content: space-around;
+    }
+
+    main > .products > .products-list > .product-desc > .item > .item-description > h3{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    main > .products > .products-list > .product-desc, 
+    main > .products > .products-list > .product{
+        width: 500px;
+    }
+
+    main > .products > .products-list > .product-desc{
+        display: flex;
+        align-items: center;
+    }
+
+    header > .header-up > div{
+        margin-left: 250px;
+    }
+
+    header > .header-up > .icons > .contact-data{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header > .header-up{
+        justify-content: space-around;
+    }
+
+    header > .header-down .budget-request{
+        width: 156px;
+    }
+
+    main > .about-us > .who-we-are > .description p{
+        text-align: center;
+    }
+
+    main > .about-us > .who-we-are > .description, 
+    main > .about-us > .who-we-are > .description p,
+    main > .about-us > .who-we-are > .description > .image > img,
+    main > .products > .products-list > .product-desc,
+    main > .products > .products-list > .product, 
+    main > .products > .products-list > .product-desc > .item > .item-description{
+        width: 400px;
+    }
+
+    main > .products > .products-list span{
+        font-size: 1.5em;
+    }
+
+    header > .header-up > div{
+        margin: 0;
+    }
+
+    [data-animation]{
+        opacity: 1;
+    }
+
+    [data-animation="down"]{
+        transform: translate3d(0, 0, 0);
+    }
+    
+    [data-animation="up"]{
+        transform: translate3d(0, 0, 0);
+    }
+    
+    [data-animation="right"]{
+        transform: translate3d(0, 0, 0);
+    }
+    
+    [data-animation="left"]{
+        transform: translate3d(0, 0, 0);
+    }
+    
+    [data-animation].animate{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 415px){
+    main > .about-us > .who-we-are > .description > .image > img, 
+    main > .about-us > .who-we-are > .description p,
+    main > .about-us > .who-we-are > .description,
+    main > .products > .products-list > .product, 
+    main > .products > .products-list > .product-desc, 
+    main > .products > .products-list > .product-desc > .item > .item-description{
+        width: 300px;
+    }
+
+    main > .about-us > .who-we-are > h2{
+        font-size: 2.2em;
+    }
+
+    main > .contact > .contact-box > .contact-button > button{
+        width: 241px;
+    }
+
+    main > .contact > .contact-box > .contact-info{
+        font-size: .9rem;
+    }
+    
+    main > .products > .products-list > .product-desc > .item{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 315px){
+    header > .header-up > .image{
+        width: 150px;
+    }
+
+    main > .about-us > .who-we-are > .description > .image > img,
+    main > .products > .products-list > .product, 
+    main > .products > .products-list > .product-desc, 
+    main > .products > .products-list > .product-desc > .item,
+    main > .products > .products-list > .product-desc > .item > .item-description{
+        width: 200px;
+    }
+
+    main > .products > .products-list > .product-desc > .item > .item-description{
+        padding: 0;
+    }
+
+    main > .about-us > .who-we-are > .description,
+    main > .about-us > .who-we-are > .description p{
+        width: 100%;
+        padding: 10px;
+    }
+
+    main > .about-us{
+        justify-content: center;
+        align-items: center;
+    }
+   
+    main > .products > .products-list span{
+        font-size: 1.1em;
+    }
+
+    main > .products > .products-list > .product-desc > .item > .item-image > img{
+        width: 150px;
+    }
+
+    main > .products > .products-list > .product-desc > .item > .item-description > p{
+        text-align: left;
+    }
+
+    main > .contact > .contact-box > .contact-info > address > ul{
+        padding: 0;
+        max-width: 250px;
+        margin: auto;
+    }
+
+    main > .contact > .contact-box > .contact-info > address > ul > li{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    main > .contact > .contact-box > .contact-button button{
+        width: 250px;
+    }
+}
