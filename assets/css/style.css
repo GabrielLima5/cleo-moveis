@@ -211,6 +211,11 @@ main > .products > h2{
     font-size: 3em;
 }
 
+main > .products img {
+    height: 348px;
+    padding: 30px;
+}
+
 main > .products > .products-list{
     max-width: 1200px;
     margin: auto; 
@@ -218,6 +223,8 @@ main > .products > .products-list{
 
 main > .products > .products-list > .product{
     border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
 }
 
 main > .products > .products-list span{
@@ -260,6 +267,10 @@ main > .products #sofa-input::placeholder{
 
 main > .products > .products-list > .product-desc > h2{
     margin: 10px 0;
+}
+
+main > .products > .products-list > .product-desc > .item > .item-description > h3{
+    text-align: center;
 }
 
 main > .products > .products-list > .product-desc > .item{
@@ -469,6 +480,10 @@ footer > span{
     main > .products > .products-list > .product{
         width: 1000px;
     }
+
+    main > .products img {
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 1100px){
@@ -514,6 +529,7 @@ footer > span{
     main > .contact > .contact-box > .contact-button{
         margin-bottom: 50px;
     }
+    
 }
 
 @media only screen and (max-width: 900px){
@@ -550,8 +566,7 @@ footer > span{
         display: inline-block;
         outline: none;
         border: none;
-        background: none;
-        
+        background: none; 
     }
 
     header > .header-down > .items > nav > ul > .close-menu{
@@ -574,6 +589,11 @@ footer > span{
         width: 700px;
     }
 
+    main > .products img {
+        height: unset;
+        padding: 10px;
+    }
+
     main > .products > .products-list > .product-desc > .item{
         width: 350px;
     }
@@ -589,6 +609,14 @@ footer > span{
     main > .products > .products-list > .product-desc > .item > .item-description > p{
         text-align: justify;
     }
+
+    main > .products .h-200{
+        height: 200px;
+    }
+
+    main > .products .h-250{
+        height: 250px;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -603,8 +631,19 @@ footer > span{
         justify-content: space-around;
     }
 
+    header > .header-up > div{
+        margin-left: 250px;
+    }
+
+    header > .header-up > .icons > .contact-data{
+        display: none;
+    }
+
+    main > .products img{
+        padding: 10px 0;
+    }
+
     main > .products > .products-list > .product-desc > .item > .item-description > h3{
-        text-align: center;
         font-size: 1.5rem;
     }
 
@@ -618,12 +657,12 @@ footer > span{
         align-items: center;
     }
 
-    header > .header-up > div{
-        margin-left: 250px;
+    main > .products .h-200{
+        height: unset;
     }
-
-    header > .header-up > .icons > .contact-data{
-        display: none;
+    
+    main > .products .h-250{
+        height: unset;
     }
 }
 
@@ -720,11 +759,15 @@ footer > span{
     main > .products > .products-list > .product-desc, 
     main > .products > .products-list > .product-desc > .item,
     main > .products > .products-list > .product-desc > .item > .item-description{
-        width: 200px;
+        width: 260px;
     }
 
     main > .products > .products-list > .product-desc > .item > .item-description{
         padding: 0;
+    }
+
+    main > .products img{
+        padding: 10px 10px;
     }
 
     main > .about-us > .who-we-are > .description,
@@ -740,10 +783,6 @@ footer > span{
    
     main > .products > .products-list span{
         font-size: 1.1em;
-    }
-
-    main > .products > .products-list > .product-desc > .item > .item-image > img{
-        width: 150px;
     }
 
     main > .products > .products-list > .product-desc > .item > .item-description > p{
