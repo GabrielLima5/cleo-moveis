@@ -643,6 +643,10 @@ footer > span{
         padding: 10px 0;
     }
 
+    main > .products > .products-list > .product-desc > .item{
+        width: 480px;
+    }
+
     main > .products > .products-list > .product-desc > .item > .item-description > h3{
         font-size: 1.5rem;
     }
@@ -692,6 +696,10 @@ footer > span{
         font-size: 1.5em;
     }
 
+      main > .products > .products-list > .product-desc > .item{
+        width: 380px;
+    }
+
     header > .header-up > div{
         margin: 0;
     }
@@ -729,7 +737,7 @@ footer > span{
     main > .products > .products-list > .product, 
     main > .products > .products-list > .product-desc, 
     main > .products > .products-list > .product-desc > .item > .item-description{
-        width: 300px;
+        width: 350px;
     }
 
     main > .about-us > .who-we-are > h2{
@@ -745,11 +753,31 @@ footer > span{
     }
     
     main > .products > .products-list > .product-desc > .item{
-        width: 250px;
+        width: 340px;
     }
 }
 
-@media only screen and (max-width: 315px){
+@media only screen and (max-width: 360px){
+    main > .about-us > .who-we-are > .description > .image > img,
+    main > .products > .products-list > .product, 
+    main > .products > .products-list > .product-desc, 
+    main > .products > .products-list > .product-desc > .item,
+    main > .products > .products-list > .product-desc > .item > .item-description{
+        width: 300px;
+    }
+
+    main > .products > .products-list > .product-desc > .item{
+        width: 290px;
+    }
+
+    main > .about-us > .who-we-are > .description,
+    main > .about-us > .who-we-are > .description p{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px){
     header > .header-up > .image{
         width: 150px;
     }
@@ -768,12 +796,6 @@ footer > span{
 
     main > .products img{
         padding: 10px 10px;
-    }
-
-    main > .about-us > .who-we-are > .description,
-    main > .about-us > .who-we-are > .description p{
-        width: 100%;
-        padding: 10px;
     }
 
     main > .about-us{
