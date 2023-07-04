@@ -146,10 +146,6 @@ main > .contact > .contact-box > .contact-button button{
     color: white;
 }
 
-main > .contact > .contact-box > .contact-button button{
-    font-size: 1.5rem;
-}
-
 header > .header-down .budget-request > span{
     margin-right: 15px;
 }
@@ -323,28 +319,46 @@ main > .contact > .contact-box > .contact-button p{
     text-align: center;
 }
 
-main > .contact > .contact-box > .contact-button > button{
-    font-size: 1.4em;
+main > .contact > .contact-box > .contact-button button{
+    font-size: 1.5rem;
 }
 
-main > .contact > .contact-box > .contact-button > button:hover{  
+main > .contact > .contact-box > .contact-button button:hover{  
     cursor: pointer;
     background-color: white;
     color: rgb(1, 153, 1);
 }
 
-main > .contact > .contact-box > .contact-button > span {
+main > .contact > .contact-box > .contact-button span,
+main > .contact .maps span {
     font-size: 1.7em;
     text-align: center;
     font-weight: bold;
 }
 
+main > .contact .maps span{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+main > .contact > .contact-box > .contact-button .whatsapp-button-div{
+    margin-bottom: 40px;
+}
+
+main > .contact .mapa-p,
+main > .contact .mapa-xp{
+    display: none;
+}
+
+main > .contact > .contact-box > .contact-button .whatsapp-button-div,
 main > .contact > .contact-box > .contact-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 main > .contact > .contact-box > .contact-info > span{
     font-size: 1.7em;
     font-weight: bold;
@@ -704,6 +718,14 @@ footer > span{
         margin: 0;
     }
 
+    main > .contact .mapa-m{
+        display: none;
+    }
+
+    main > .contact .mapa-p{
+        display: block;
+    }
+
     [data-animation]{
         opacity: 1;
     }
@@ -744,12 +766,21 @@ footer > span{
         font-size: 2.2em;
     }
 
-    main > .contact > .contact-box > .contact-button > button{
+    main > .contact > .contact-box > .contact-button button{
         width: 241px;
+        font-size: 1.3rem;
     }
 
     main > .contact > .contact-box > .contact-info{
         font-size: .9rem;
+    }
+
+    main > .contact .mapa-p{
+        display: none;
+    }
+
+    main > .contact .mapa-xp{
+        display: block;
     }
     
     main > .products > .products-list > .product-desc > .item{
