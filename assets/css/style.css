@@ -127,10 +127,12 @@ header > .header-down > .items > nav > ul > li:hover{
 header > .header-down > .items > nav > ul > li:nth-child(6):hover{
     border-bottom: unset;
 }
-header > .header-down > .items > nav > ul > li > a {
+header > .header-down > .items > nav > ul > li > a,
+footer span a{
     text-decoration: none;
     color: white;
 }
+
 header > .header-down .budget-request{
     font-size: 0.9em;
 }
@@ -413,11 +415,17 @@ footer{
     background-color:black;
     color: white;
     display: flex !important;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer > span{
+footer .company-info{
+    display: flex;
+
+}
+
+footer span{
     text-align: center;
 }
 
@@ -785,6 +793,10 @@ footer > span{
     
     main > .products > .products-list > .product-desc > .item{
         width: 340px;
+    }
+
+    footer .company-info{
+        flex-direction: column;
     }
 }
 
