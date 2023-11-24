@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.p-10{
+    padding: 10px !important;
+}
+
 :root{
     --bg-color: #ca2025;
 }
@@ -247,7 +251,8 @@ main > .products > .products-list > .product-desc{
 
 main > .products #mesa-turim,
 main > .products #painel-roma,
-main > .products #sofa-input{
+main > .products #sofa-input,
+main > .products #sofa-vancouver{
     width: 100%;
     grid-column: span 2;
 }
